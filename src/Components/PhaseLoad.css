@@ -1,0 +1,29 @@
+.phase-load path {
+    opacity: 0;
+    animation: phase_load_trace 2.5s infinite cubic-bezier(0.9, 0, 0.1, 1);
+}
+
+.phase-load-hide {
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+}
+
+@keyframes phase_load_trace {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}

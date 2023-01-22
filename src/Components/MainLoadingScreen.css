@@ -1,0 +1,29 @@
+.cfxs-logo-loaded {
+    animation: cfxs_line_load 2s forwards ease-in-out;
+}
+
+#cfxs_logo {
+    fill: #FFF;
+    filter: drop-shadow(1vh 1vh 1vh #000)
+}
+
+@keyframes cfxs_line_load {
+    0% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+        stroke: #FFF;
+        opacity: 1;
+    }
+
+    50% {
+        fill: #000;
+        opacity: 1;
+    }
+
+    100% {
+        fill: #000;
+        stroke-dashoffset: 2650;
+        stroke-dasharray: 2650;
+        opacity: 0;
+    }
+}
