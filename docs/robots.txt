@@ -1,0 +1,6 @@
+User-agent: SiteAuditBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: *
+Allow: /
